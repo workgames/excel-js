@@ -6,13 +6,17 @@
     "node": true
   },
   "rules": {
+    "indent": ["error", 4],
+    "operator-linebreak": "off",
+    "no-trailing-spaces": "off",
     "semi": "off",
     "arrow-parens": "off",
     "comma-dangle": "off",
     "object-curly-spacing": "off",
     "quotes": "off",
     "max-len": ["error", { "code": 160 , "ignoreComments": true }],
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off"
   },
   "extends": [
     "eslint:recommended",

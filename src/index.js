@@ -1,3 +1,12 @@
-import "./module";
 import "./scss/index.scss"
-console.log('working 111111 22222')
+import {Excel} from "@/componets/excel/Excel";
+import {Header} from "@/componets/header/Header";
+import {Toolbar} from "@/componets/toolbar/Toolbar";
+import {Formula} from "@/componets/formula/Formula";
+import {Table} from "@/componets/table/Table";
+
+const excel = new Excel('#app', {
+    components: [Header, Toolbar, Formula, Table]
+})
+
+excel.render();
